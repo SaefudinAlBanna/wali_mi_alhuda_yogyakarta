@@ -1,52 +1,93 @@
-# Miscellaneous
-*.class
+# ============================================
+# 🔹 GENERAL
+# ============================================
 *.log
-*.pyc
+*.tmp
 *.swp
+*.swo
+*.class
+*.pyc
 .DS_Store
+Thumbs.db
+
+# ============================================
+# 🔹 SYSTEM / EDITOR
+# ============================================
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.history/
 .atom/
-.build/
-.buildlog/
-.history
 .svn/
 .swiftpm/
 migrate_working_dir/
 
-# Environment variables
-.env
-
-# IntelliJ related
-*.iml
-*.ipr
-*.iws
-.idea/
-
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
-
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
+# ============================================
+# 🔹 FLUTTER & DART
+# ============================================
 .dart_tool/
+.packages
+.pub/
+.pub-cache/
 .flutter-plugins
 .flutter-plugins-dependencies
-.pub-cache/
-.pub/
-/build/
-firebase_options.dart
+.flutter-versions
+build/
+**/doc/api/
+**/ios/Flutter/.last_build_id
+
+# ============================================
+# 🔹 ENVIRONMENT VARIABLES & SECRETS
+# ============================================
+.env
+*.env
+android/key.properties
 android/app/google-services.json
-/android/key.properties
+ios/Runner/GoogleService-Info.plist
+firebase_options.dart
 upload-keystore-wali.jks
 
-# Symbolication related
-app.*.symbols
-
-# Obfuscation related
-app.*.map.json
-
-# Android Studio will place build artifacts here
+# ============================================
+# 🔹 PLATFORM-SPECIFIC BUILD OUTPUTS
+# ============================================
+# Android
 /android/app/debug
 /android/app/profile
 /android/app/release
+**/local.properties
+
+# iOS
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/ServiceDefinitions.json
+ios/Runner/GeneratedPluginRegistrant.*
+
+# macOS
+macos/Flutter/ephemeral/
+
+# Windows
+windows/Flutter/ephemeral/
+
+# Linux
+linux/flutter/ephemeral/
+
+# Web
+build/web/
+
+# ============================================
+# 🔹 SYMBOLICATION & OBFUSCATION
+# ============================================
+app.*.symbols
+app.*.map.json
+
+# ============================================
+# 🔹 MISC
+# ============================================
+# Output of build_runner or code generation
+**/generated_plugin_registrant.dart
+*.lock
