@@ -49,6 +49,12 @@ ios/Runner/GoogleService-Info.plist
 firebase_options.dart
 upload-keystore-wali.jks
 
+# Signing keys
+*.jks
+*.keystore
+key.properties
+
+
 # ============================================
 # 🔹 PLATFORM-SPECIFIC BUILD OUTPUTS
 # ============================================

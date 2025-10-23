@@ -1,10 +1,10 @@
 # Project-level configuration.
 cmake_minimum_required(VERSION 3.21)
-project(wali_sdtq_telagailmu LANGUAGES CXX)
+project(wali_mi_alhuda LANGUAGES CXX)
 
 # The name of the executable created for the application. Change this to change
 # the on-disk name of your application.
-set(BINARY_NAME "wali_sdtq_telagailmu")
+set(BINARY_NAME "wali_mi_alhuda")
 
 # Explicitly opt in to modern CMake behaviors to avoid warnings with recent
 # versions of CMake.

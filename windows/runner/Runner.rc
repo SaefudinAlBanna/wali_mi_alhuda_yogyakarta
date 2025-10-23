@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.telagailmu" "\0"
-            VALUE "FileDescription", "wali_sdtq_telagailmu" "\0"
+            VALUE "CompanyName", "com.alhuda" "\0"
+            VALUE "FileDescription", "wali_mi_alhuda" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "wali_sdtq_telagailmu" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2025 com.telagailmu. All rights reserved." "\0"
-            VALUE "OriginalFilename", "wali_sdtq_telagailmu.exe" "\0"
-            VALUE "ProductName", "wali_sdtq_telagailmu" "\0"
+            VALUE "InternalName", "wali_mi_alhuda" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2025 com.alhuda. All rights reserved." "\0"
+            VALUE "OriginalFilename", "wali_mi_alhuda.exe" "\0"
+            VALUE "ProductName", "wali_mi_alhuda" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

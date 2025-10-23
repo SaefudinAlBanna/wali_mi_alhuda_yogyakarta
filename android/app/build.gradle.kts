@@ -11,7 +11,7 @@ import java.io.FileInputStream
 
 android {
     // [PERHATIAN]: Pastikan namespace ini sesuai dengan aplikasi orang tua, bukan aplikasi sekolah.
-    // Namespace dari aplikasi sekolah: "com.unadigital.pkbmtelagailmuyogyakarta"
+    // Namespace dari aplikasi sekolah: "com.unadigital.pkbmalhudayogyakarta"
     // Namespace dari aplikasi orang tua yang kita kerjakan: "com.unadigital.parent.mialhudayogyakarta"
     // Saya asumsikan namespace Anda yang benar adalah yang di komentar saya, mohon dicek ulang.
     namespace = "com.unadigital.parent.mialhudayogyakarta" 

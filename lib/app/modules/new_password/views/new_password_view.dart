@@ -23,7 +23,7 @@ class NewPasswordView extends GetView<NewPasswordController> {
               children: [
                 const Text("Keamanan Akun", style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold), textAlign: TextAlign.center),
                 const SizedBox(height: 8),
-                const Text("Untuk melanjutkan, masukkan password lama Anda (password default: telagailmu) dan buat password baru.", style: TextStyle(fontSize: 16, color: Colors.grey), textAlign: TextAlign.center),
+                const Text("Untuk melanjutkan, masukkan password lama Anda (password default: alhuda) dan buat password baru.", style: TextStyle(fontSize: 16, color: Colors.grey), textAlign: TextAlign.center),
                 const SizedBox(height: 40),
 
                 // --- FIELD BARU: PASSWORD LAMA ---
