@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 import '../../../models/tagihan_model.dart';
-import '../../../models/transaksi_model.dart'; // <-- Pastikan model ini di-import
+import '../../../models/transaksi_model.dart';
 import '../controllers/detail_keuangan_siswa_controller.dart';
 
 class DetailKeuanganSiswaView extends GetView<DetailKeuanganSiswaController> {
@@ -53,30 +53,39 @@ class DetailKeuanganSiswaView extends GetView<DetailKeuanganSiswaController> {
     });
   }
 
-  // [WIDGET BARU] Tambahkan widget ini (sama seperti di aplikasi sekolah)
   Widget _buildTotalTunggakanCard() {
-    return Obx(() => Card(
-      margin: const EdgeInsets.all(16),
-      color: controller.totalTunggakan.value > 0 ? Colors.red.shade50 : Colors.green.shade50,
-      elevation: 2,
-      child: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            const Text("Total Tunggakan Saat Ini", style: TextStyle(fontWeight: FontWeight.bold)),
-            Text(
-              "Rp ${NumberFormat.decimalPattern('id_ID').format(controller.totalTunggakan.value)}",
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 16,
-                color: controller.totalTunggakan.value > 0 ? Colors.red.shade700 : Colors.green.shade700,
+    return GestureDetector(
+      onTap: controller.showDetailTunggakan, // <-- MEMBUAT KARTU BISA DI-KLIK
+      child: Obx(() => Card(
+        margin: const EdgeInsets.all(16),
+        color: controller.totalTunggakan.value > 0 ? Colors.red.shade50 : Colors.green.shade50,
+        elevation: 2,
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text("Total Tunggakan Saat Ini", style: TextStyle(fontWeight: FontWeight.bold)),
+                  if (controller.totalTunggakan.value > 0)
+                    Text("Ketuk untuk melihat rincian", style: TextStyle(fontSize: 12, color: Colors.grey.shade600)),
+                ],
               ),
-            ),
-          ],
+              Text(
+                "Rp ${NumberFormat.decimalPattern('id_ID').format(controller.totalTunggakan.value)}",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 16,
+                  color: controller.totalTunggakan.value > 0 ? Colors.red.shade700 : Colors.green.shade700,
+                ),
+              ),
+            ],
+          ),
         ),
-      ),
-    ));
+      )),
+    );
   }
 
   Widget _buildSppTab() {
